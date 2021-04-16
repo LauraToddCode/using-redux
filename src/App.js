@@ -10,7 +10,7 @@ function App() {
         <div>
             <Navbar />
             <Switch>
-                <Route exact path="/" component={ Home } />
+                <Route exact path="/using-redux" component={ Home } />
                 <Route exact path="/saved" component={ Saved } />
             </Switch>
         </div>
