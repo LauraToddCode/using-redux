@@ -8,10 +8,16 @@ function Saved({ savedItems, removeItem }) {
             <h2>Saved</h2>
             <div>
                 {savedItems.map(animal => (
-                        <div id={animal.id} key={animal.id} className="animal">
-                            {animal.name}
-                            <button onClick={() => removeItem(animal.id)}>Remove</button>
-                        </div>
+                    <div 
+                        id={animal.id} 
+                        key={animal.id} 
+                        className="animal"
+                    >
+                        {animal.name}
+                        <button onClick={() => removeItem(animal.id)}>
+                            Remove
+                        </button>
+                    </div>
                 ))}
             </div>
         </div>
